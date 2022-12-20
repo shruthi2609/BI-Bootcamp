@@ -11,11 +11,12 @@ function basicDetails(){
     function contactDetails(){
         let address="Delhi"
         let contactNo=92839283
-        console.log("inner")
+        console.log(fname,reg,address)
     }
     console.log("outer")
-    return contactDetails
+   return contactDetails
 }
+
 let innerFun=basicDetails()
 innerFun()
 
