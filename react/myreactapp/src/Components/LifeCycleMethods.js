@@ -28,6 +28,14 @@ else{
     return true
 }
 }
+getSnapshotBeforeUpdate(prevProps,prevState){
+    console.log("previous",prevState)
+    console.log("current",this.state)
+    return prevState
+}
+componentDidUpdate(prevProps,prevState,snap){
+   console.log(snap)
+}
 
 render(){
     console.log("child Render")
