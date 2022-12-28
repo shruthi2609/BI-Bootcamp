@@ -1,7 +1,12 @@
+import { useContext } from "react"
+import SimpleContext from "./SimpleContext"
 function ConsumerTwo(){
+const {data,handleData}=useContext(SimpleContext)
     return(
         <div>
-            <h1>Consumer Two</h1>
+             {console.log(useContext(SimpleContext))}
+            <h1>Consumer Two :{data}</h1>
+           
         </div>
     )
 }
